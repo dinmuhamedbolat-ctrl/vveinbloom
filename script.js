@@ -2,28 +2,28 @@ const services = [
   {
     id: "classic",
     name: "Маникюр с покрытием",
-    price: 2700,
+    price: 6000,
     duration: 110,
     text: "Аппаратная обработка, выравнивание и стойкое покрытие гель-лаком.",
   },
   {
     id: "strength",
     name: "Укрепление + дизайн",
-    price: 3400,
+    price: 7500,
     duration: 140,
     text: "Для тонких ногтей: укрепление базой или гелем и легкий акцентный дизайн.",
   },
   {
     id: "care",
-    name: "SPA-уход без покрытия",
+    name: "без покрытия",
     price: 2100,
     duration: 75,
-    text: "Форма, кутикула, полировка, питательная маска и массаж рук.",
+    text: "Форма, кутикула, полировка",
   },
 ];
 
-const slots = ["10:00", "11:30", "13:00", "14:30", "16:00", "17:30", "19:00"];
-const rub = new Intl.NumberFormat("ru-RU", { style: "currency", currency: "RUB", maximumFractionDigits: 0 });
+const slots = ["14:00", "16:00", "18:00"];
+const rub = new Intl.NumberFormat("ru-RU", { style: "currency", currency: "KZT", maximumFractionDigits: 0 });
 
 const serviceGrid = document.querySelector("#serviceGrid");
 const serviceSelect = document.querySelector("#service");
